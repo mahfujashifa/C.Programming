@@ -1,0 +1,55 @@
+#include<stdio.h>
+int main()
+{
+    int optn;
+    float a,b,result;
+    printf("welcome to the calculator./nchoose an operator:");
+    printf("\npress'1'for'+':\npress'2'for'-':\npress'3'for'*':\npress'4'for'/':\n");
+    scanf("%d",&optn);
+    printf("\nEnter the first value:");
+    scanf("%f",&a);
+    printf("\nEnter the second value:");
+    scanf("%f",&b);
+
+    if(optn==1)
+    {
+
+        result=a+b;
+        printf("\n%.2f+%.2f=%.2f",a,b, result);
+
+
+    }
+
+    else if(optn==2)
+
+    {
+        result=a-b;
+        printf("\n%.2f-%.2f=%.2f",a,b, result);
+
+
+    }
+    else if(optn==3)
+    {
+        result=a*b;
+        printf("\n%.2f*%.2f=%.2f",a,b, result);
+
+    }
+    else if(optn==4)
+    {
+        result=a/b;
+        printf("\n%.2f/%.2f=%.2f",a,b, result);
+
+    }
+    else
+    {
+        printf("Select the operator carefully");
+    }
+    return 0;
+
+
+
+
+
+
+
+}
